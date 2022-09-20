@@ -1,8 +1,19 @@
+import { Layout, TopBar, Card } from "@/components";
+import { useNotifications } from "@/hooks";
+
 function App() {
+  const { notifications, unreadCount, handleMarkAllAsRead } =
+    useNotifications();
   return (
-    <div className="container">
-      <h1>Hello World</h1>
-    </div>
+    <Layout>
+      <TopBar
+        unreadCount={unreadCount}
+        handleMarkAllAsRead={handleMarkAllAsRead}
+      />
+      {notifications.map((notification) => (
+        <Card key={notification.id} {...notification} />
+      ))}
+    </Layout>
   );
 }
 

@@ -1,0 +1,36 @@
+.topbar {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        h1 {
+            font-size: 1.5rem;
+            color: $very-dark-blue;
+            font-weight: $font-weight-800;
+        }
+
+        &__badge {
+            background: $primary-blue;
+            color: $white;
+            padding: .3rem .8rem;
+            border-radius: 0.5rem;
+        }
+    }
+
+    &__button {
+        background: transparent;
+        border: none;
+        color: $grayish-blue;
+        cursor: pointer;
+
+        &:hover {
+            color: $primary-blue;
+        }
+    }
+}

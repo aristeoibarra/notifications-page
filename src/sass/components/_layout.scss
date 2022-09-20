@@ -1,0 +1,32 @@
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+
+    @include media(tablet) {
+        height: auto;
+        padding: 4rem 0;
+    }
+}
+
+.box {
+    padding: 0 .90rem;
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 10px;
+
+    @include media(tablet) {
+        padding: 0 2rem;
+    }
+}
+
+.cards {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

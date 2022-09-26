@@ -14,7 +14,7 @@ export default function TopBar(props: TopBarProps) {
         <div className="topbar__info__badge">{props.unreadCount}</div>
       </div>
       <button className="topbar__button" onClick={props.handleMarkAllAsRead}>
-        <p>{t("mark_all_as_read")}</p>
+        {t("mark_all_as_read")}
       </button>
     </div>
   );

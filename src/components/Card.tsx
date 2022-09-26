@@ -50,7 +50,7 @@ export default function Card(props: INotification) {
           <img
             className="card__commented-picture"
             src={props.body.image}
-            alt={props.body.message_inline}
+            alt={t("profile_picture")}
           />
         )}
       </div>
